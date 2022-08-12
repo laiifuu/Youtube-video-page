@@ -1,3 +1,46 @@
 * {
-    border: 1px solid black;
+   /* border: 1px solid black;*/
+    box-sizing: border-box;
 }
+
+image{
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    font-size: 24px;
+}
+header{
+    height: 3rem;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 30px;
+    padding: 3px;
+    margin: 10px;
+}
+
+
+.small-container{
+    display: flex;
+}
+
+#search-bar{
+    width: 50%;
+    align-items: center;
+}
+#search-input{
+    height: 2rem;
+    width: 95%;
+}
+
