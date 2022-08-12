@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Youtube Video Page</title>
   </head>
 
-  <body>
+  <body class="container">
     <header class="container">
       <div class="small-container">
         <img src="images/menu.png" alt="burger menu" class="icon" />
@@ -25,7 +31,12 @@
             id="search-icon"
           />
         </div>
-        <img src="images/microphone.png" alt="vocal search icon" class="icon" id="microphone">
+        <img
+          src="images/microphone.png"
+          alt="vocal search icon"
+          class="icon"
+          id="microphone"
+        />
       </div>
 
       <div class="small-container">
@@ -38,5 +49,46 @@
         <div id="profil"></div>
       </div>
     </header>
+
+    <main>
+      <div id="video-section">
+        <iframe
+          src="https://www.youtube.com/embed/lJIrF4YjHfQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div id="info">
+          <h3>Embed videos and playlists</h3>
+          <p>
+            <span>411 364 views </span> <span>May 13, 2016 </span> To learn more please visit the YouTube Help Center: 
+            <a href="https://www.youtube.com/help"
+              >https://www.youtube.com/help</a
+            >.
+          </p>
+        </div>
+
+        <div class="small-container">
+            <button class="small-container action-button">
+                <img src="images/like.png" alt="like button" class="icon"> <span>1.5K</span> 
+            </button>
+            <button class="small-container action-button">
+                <img src="images/dislike.png" alt="dilsike Button" class="icon"><span>Dislike</span>
+            </button>
+            <button class="small-container action-button">
+                <img src="images/forward.png" alt="share button" class="icon"><span>Share</span> 
+            </button>
+            <button class="small-container action-button">
+                <img src="images/add-to-playlist.png" alt="save button" class="icon"><span>Save</span>
+            </button>
+            <button class="small-container action-button">
+                <img src="images/dots.png" alt="save button" class="icon">
+            </button>
+        </div>
+      </div>
+
+      <div id="recommendations-section"></div>
+    </main>
   </body>
 </html>
