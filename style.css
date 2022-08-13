@@ -1,5 +1,5 @@
 * {
-   /*border: 1px solid black;*/
+  /* border: 1px solid black;*/
     box-sizing: border-box;
 }
 
@@ -21,6 +21,9 @@ header{
     width: 100%;
 }
 
+p{
+    margin: 0;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -35,6 +38,10 @@ header{
     margin: 10px;
 }
 
+.icon-2{
+    width: 1.5rem;
+    margin: 5px;
+}
 
 .small-container{
     display: flex;
@@ -63,12 +70,12 @@ header{
     background-color: #f9f9f9;
     border-radius: 50px;
 }
-#profil{
+.profil{
     height: 2rem;
     width: 2rem;
     padding: 3px;
     margin: 10px;
-    background-color: #f9f9f9;
+    background-color: #4b21ac;
     border-radius: 50px;
    
 }
@@ -99,4 +106,39 @@ iframe{
 
 .action-button > img{
     margin: 0;
+}
+
+#sort-button{
+    margin-left: 30px;
+}
+
+#comment-space{
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    height: 2rem;
+    border-bottom: 1px solid black;
+}
+
+#write-comment{
+    align-items:flex-start;
+}
+
+.commenter{
+    justify-self: flex-start;
+}
+
+.comment-date, .user-name{
+    font-size: 0.8rem;
+}
+
+.comment{
+    margin-bottom: 20px;
+}
+.info{
+    width: 90%;
+}
+
+.bottom-margin{
+    margin-bottom: 20px;
 }
